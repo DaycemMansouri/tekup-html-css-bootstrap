@@ -6,17 +6,119 @@
   <title>Activités — TEK-UP Code Club</title>
   <meta name="description" content="Ateliers, hackathons et événements du TEK-UP Code Club.">
   <meta name="author" content="Votre Nom">
+  <style>table, th, td { border: 1px solid #555; border-collapse: collapse; padding: 4px 8px; }</style>
 </head>
-<body>
-  <!-- Page Activités : accueillera les listes et le tableau au TP 2 -->
+<body id="top">
 
+  <!-- Menu commun -->
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="activites.html" aria-current="page">Activités</a></li>
+    <li><a href="inscription.html">Inscription</a></li>
+  </ul>
+  <hr>
+
+  <h1>Nos activités</h1>
+
+  <!-- Sommaire : liens internes -->
+  <ul>
+    <li><a href="#ateliers">Ateliers hebdomadaires</a></li>
+    <li><a href="#hackathon">Hackathon</a></li>
+    <li><a href="#planning">Planning de la semaine</a></li>
+    <li><a href="#lexique">Lexique</a></li>
+  </ul>
+
+  <h2 id="ateliers">Ateliers hebdomadaires</h2>
+  <h3>Thèmes du semestre</h3>
+  <ul>
+    <li>Développement web
+      <ul>
+        <li>HTML5 et CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+    </li>
+    <li>Data et IA
+      <ul>
+        <li>Python pour la data</li>
+        <li>Introduction au machine learning</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 id="hackathon">Hackathon</h2>
+  <p>Le déroulement du hackathon :</p>
+  <ol>
+    <li>Inscription des équipes (3 à 5 personnes).</li>
+    <li>Présentation des sujets par les sponsors.</li>
+    <li>24 heures de développement.</li>
+    <li>Soutenance devant le jury.</li>
+    <li>Remise des prix.</li>
+  </ol>
   <p>
-    Cette page présentera bientôt le détail de nos ateliers hebdomadaires,
-    de nos hackathons et de notre planning.
+    <a href="docs/reglement.pdf" download>Télécharger le règlement du hackathon (PDF)</a>
   </p>
 
+  <h2 id="planning">Planning de la semaine</h2>
+  <table>
+    <caption>Planning hebdomadaire des activités du club</caption>
+    <thead>
+      <tr>
+        <th scope="col">Créneau</th>
+        <th scope="col">Lundi</th>
+        <th scope="col">Mercredi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">14 h – 16 h</th>
+        <td>Atelier web</td>
+        <!-- Activité commune lundi + mercredi sur le même créneau -->
+        <td colspan="2">Atelier Python (commun)</td>
+      </tr>
+      <tr>
+        <th scope="row">16 h – 18 h</th>
+        <td>Cybersécurité</td>
+        <!-- Activité qui dure deux créneaux le mercredi (rowspan) -->
+        <td rowspan="2">Projet Hackathon</td>
+      </tr>
+      <tr>
+        <th scope="row">18 h – 20 h</th>
+        <td>Réunion bureau</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">Total</th>
+        <td colspan="2">6 heures d'activités par semaine</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2 id="lexique">Lexique</h2>
+  <dl>
+    <dt>Hackathon</dt>
+    <dd>Marathon de programmation où des équipes créent un prototype en temps limité.</dd>
+    <dt>Front-end</dt>
+    <dd>Partie visible d'un site web, exécutée dans le navigateur.</dd>
+    <dt>Back-end</dt>
+    <dd>Partie serveur qui gère les données et la logique de l'application.</dd>
+  </dl>
+
   <p>
-    &copy; 2026&mdash;2027 TEK-UP Code Club.&nbsp;Tous droits réservés.
+    Pour aller plus loin, consultez la
+    <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" rel="noopener noreferrer">documentation HTML de MDN (nouvel onglet)</a>.
   </p>
+
+  <hr>
+
+  <!-- Pied de page commun -->
+  <p>
+    <a href="mailto:club.info@tek-up.tn?subject=Demande%20d%27information">Nous écrire</a> —
+    <a href="tel:+21671000000">+216 71 000 000</a>
+  </p>
+  <p><small>&copy; 2026&mdash;2027 TEK-UP Code Club.&nbsp;Tous droits réservés.</small></p>
+
+  <p><a href="#top">Retour en haut</a></p>
+
 </body>
 </html>
